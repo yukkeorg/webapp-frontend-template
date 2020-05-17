@@ -11,13 +11,13 @@ const isDevelopment = (MODE === 'development');
 module.exports = {
     mode: MODE,
     entry: {
-        app: './src/index.js',
+        app: './src/main.js',
     },
     plugins: [
         new VueLoaderPlugin(),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: './src/index.ejs',
+            template: './src/index.html.ejs',
         }),
     ],
     devtool: 'inline-source-map',
